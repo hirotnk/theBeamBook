@@ -12,6 +12,7 @@ after_failure:
 - docker logs thebeambook
 deploy:
  - provider: releases
+   skip_cleanup: true
    api_key:
      secure: fPrp4rezm/Tp04eP7GvV3J1nbsAr+0lTZK4aqmIKubecxZLeH7yutE7TYPhvao5H5yWvYOx8oJjilL8QIJf9XZJgyp7KkesAWtoMTjY3Du5E9q9cJA6jHwYJ48Q+LViUO12iUlKYtAlRNvlTshYCFsfiqdvNhZsaTW9fpuiJdyQPRvx26b/Pt9HCICKQheeK6ldPBLscGR/n6hhR3/CBTd1ZQOZpHchO7ADy7Yk0nYHORwh3L41EN411ua1X9XqCzPf9O6o5XRBKIVIE0SVS/Z0HtDYisERqaGneJmPkYHMDuVzlIoNqAt7yAZT8wB2pkxt6XqmRKCPfUXgFZoMahGrpvyph5P2eNu/Hw2Oq80XJzIuDTUae6g24nTpyu8rGNY8U94V7E3Woq2XkDgrxGqj9eeWHAgBBMczEZ5j89Xvvmdn29rQvyAtg6l7T9iGHQVFjlhy/ICmE+ke+JERd/oWoH2wq7wbor/Ea+/jzKz8KDz0zXrafQ4tFKVmYIzabtJl4b4X4FfNzjgIfa3I9Rv3vfrsx/Qu9aZM7Jx+GsFqTC99mT+2W8x+k9RBt3/RKjOCM7wQszUgLxvi284FQrgXHo+Z0DJiv8ZON7rxcLkyNa+zAhyk5HbfMouo04KjPqpTse7+TZntSXv2nP14OP0Wr7qwVVUu+QvtBciycFmg=
    file: beam-book.pdf
